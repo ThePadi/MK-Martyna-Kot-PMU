@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Tenor+Sans&display=swap">
 <style>
 [hidden]{display:none!important}
+:root{color-scheme:light}
 /* Layout: sticky monogram bar with a tab rail; one home panel plus five sub-panels on a warm greige ground. Photos sit in tall arched frames like the studio mirror; a single champagne hairline (the liner's line) marks every tab change. */
 :root{
   --bg:#eeeae5;
@@ -38,13 +39,6 @@
   --f-body:"Jost","Helvetica Neue",Arial,sans-serif;
   --wrap:1180px;
   --ease:cubic-bezier(.22,.61,.36,1);
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#1f1c1a; --surface:#292523; --ink:#ede6dc; --muted:#a99d91; --line:#3d3733;
-    --champ:#cdb894; --champ-soft:#8f7a5c; --deep:#141211; --on-deep:#efe8de; --on-deep-muted:#a99d91; --star:#d4b77f;
-    color-scheme:dark;
-  }
 }
 :root[data-theme="dark"]{
   --bg:#1f1c1a; --surface:#292523; --ink:#ede6dc; --muted:#a99d91; --line:#3d3733;
