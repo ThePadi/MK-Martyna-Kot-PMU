@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Naturalny makijaż permanentny brwi, ust i powiek. Linergistka Martyna Kot, gabinety w Będzinie i Zamościu. Zapisy: 574 082 772.">
+<meta name="theme-color" content="#3b3634">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MK Martyna Kot · Makijaż permanentny Będzin | Zamość">
+<meta property="og:description" content="Naturalny makijaż permanentny brwi, ust i powiek. Cennik, efekty, opinie i zapisy.">
+<meta property="og:image" content="https://thepadi.github.io/MK-Martyna-Kot-PMU/img/og.jpg">
+<meta property="og:url" content="https://thepadi.github.io/MK-Martyna-Kot-PMU/">
+<meta property="og:locale" content="pl_PL">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<title>MK Martyna Kot</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Tenor+Sans&display=swap">
+<style>
+[hidden]{display:none!important}
+/* Layout: sticky monogram bar with a tab rail; one home panel plus five sub-panels on a warm greige ground. Photos sit in tall arched frames like the studio mirror; a single champagne hairline (the liner's line) marks every tab change. */
+:root{
+  --bg:#eeeae5;
+  --surface:#f8f6f3;
+  --ink:#2e2a28;
+  --muted:#73695f;
+  --line:#d8cfc5;
+  --champ:#9c805a;
+  --champ-soft:#cdb894;
+  --deep:#3b3634;
+  --on-deep:#efe8de;
+  --on-deep-muted:#b9aea2;
+  --star:#b8955f;
+  --f-display:"Cormorant Garamond","Cormorant",Georgia,"Times New Roman",serif;
+  --f-label:"Tenor Sans","Gill Sans","Trebuchet MS",sans-serif;
+  --f-body:"Jost","Helvetica Neue",Arial,sans-serif;
+  --wrap:1180px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1f1c1a; --surface:#292523; --ink:#ede6dc; --muted:#a99d91; --line:#3d3733;
+    --champ:#cdb894; --champ-soft:#8f7a5c; --deep:#141211; --on-deep:#efe8de; --on-deep-muted:#a99d91; --star:#d4b77f;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1f1c1a; --surface:#292523; --ink:#ede6dc; --muted:#a99d91; --line:#3d3733;
+  --champ:#cdb894; --champ-soft:#8f7a5c; --deep:#141211; --on-deep:#efe8de; --on-deep-muted:#a99d91; --star:#d4b77f;
+  color-scheme:dark;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-weight:300;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--champ);outline-offset:3px;border-radius:2px}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:720px){.wrap{padding-left:max(32px,env(safe-area-inset-left,0px));padding-right:max(32px,env(safe-area-inset-right,0px))}}
+
+.label{font-family:var(--f-label);font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.005em}
+h1{font-size:clamp(2.6rem,6.2vw,4.8rem);font-weight:300}
+h2{font-size:clamp(2rem,4vw,3.1rem);font-weight:300}
+h3{font-size:1.6rem;font-weight:500}
+h1 em,h2 em{font-style:italic;color:var(--champ)}
+p{margin:0}
+.lede{font-size:1.08rem;color:var(--muted);max-width:56ch}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:74px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg.mark{width:40px;height:40px;flex:none}
+.brand .wm{display:flex;flex-direction:column;line-height:1}
+.brand .wm b{font-family:var(--f-display);font-weight:500;font-size:1.32rem;letter-spacing:.16em}
+.brand .wm small{font-family:var(--f-label);font-size:.55rem;letter-spacing:.34em;color:var(--muted);margin-top:5px}
+.nav{position:relative;display:flex;gap:4px}
+.nav button{font-family:var(--f-label);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;padding:12px 12px;color:var(--muted);white-space:nowrap;transition:color .3s}
+.nav button:hover{color:var(--ink)}
+.nav button[aria-current="page"]{color:var(--ink)}
+.nav .ind{position:absolute;bottom:4px;left:0;height:2px;width:40px;border-radius:2px;background:linear-gradient(90deg,transparent,var(--champ) 18%,var(--champ) 70%,transparent);transition:transform .5s var(--ease),width .5s var(--ease);pointer-events:none}
+.call-mini{display:none}
+@media (min-width:1100px){.call-mini{display:inline-flex;font-family:var(--f-label);font-size:.74rem;letter-spacing:.14em;border:1px solid var(--ink);padding:10px 16px;text-decoration:none;white-space:nowrap;transition:background .3s,color .3s}.call-mini:hover{background:var(--ink);color:var(--bg)}}
+@media (max-width:899px){
+  .top-in{flex-wrap:wrap;gap:0;min-height:0;padding-block:12px 0}
+  .nav{order:3;width:100%;overflow-x:auto;scrollbar-width:none;margin:6px -16px 0;padding:0 12px;width:calc(100% + 32px)}
+  .nav::-webkit-scrollbar{display:none}
+  .nav button{padding:12px 10px 14px;font-size:.7rem}
+}
+.stroke{position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--champ);transform:scaleX(0);transform-origin:left;pointer-events:none}
+.stroke.run{animation:stroke .75s var(--ease) forwards}
+@keyframes stroke{0%{transform:scaleX(0);opacity:1;transform-origin:left}55%{transform:scaleX(1);opacity:1;transform-origin:left}56%{transform-origin:right}100%{transform:scaleX(0);opacity:1;transform-origin:right}}
+
+/* ---------- panels + tab transition ---------- */
+main{display:block;min-height:60vh}
+.panel{padding-block:44px 88px}
+@media (min-width:900px){.panel{padding-block:64px 110px}}
+.panel.leaving{animation:leave .22s ease-in forwards}
+@keyframes leave{to{opacity:0;transform:translateY(10px);filter:blur(2px)}}
+.panel.entering .rv{animation:rise .7s var(--ease) backwards;animation-delay:calc(var(--s,0) * 70ms + 120ms)}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+@media (prefers-reduced-motion:reduce){
+  .panel.leaving,.panel.entering .rv,.stroke.run{animation:none!important}
+  .nav .ind{transition:none}
+  html{scroll-behavior:auto}
+}
+.sec{display:grid;gap:28px;margin-top:96px}
+.sec:first-child{margin-top:0}
+.sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px 32px}
+.sec-head > div{display:grid;gap:12px;min-width:0}
+.sec-head > .filters{display:flex}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--f-label);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;padding:16px 26px;text-decoration:none;transition:background .3s,color .3s,border-color .3s}
+.btn-dark{background:var(--ink);color:var(--bg)}
+.btn-dark:hover{background:var(--champ);color:#fff}
+.btn-line{border:1px solid var(--line);color:var(--ink)}
+.btn-line:hover{border-color:var(--ink)}
+.link{font-family:var(--f-label);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);display:inline-flex;align-items:center;gap:10px;border-bottom:1px solid var(--champ);padding-bottom:4px;text-decoration:none}
+.link:hover{color:var(--champ)}
+.arrow{width:18px;height:8px}
+
+/* ---------- home ---------- */
+.hero{display:grid;gap:44px;align-items:center}
+@media (min-width:900px){.hero{grid-template-columns:1.08fr .92fr;gap:64px}}
+.hero-copy{display:grid;gap:26px;min-width:0}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.phone-line{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:.95rem;color:var(--muted)}
+.phone-line strong{font-family:var(--f-display);font-size:1.5rem;font-weight:500;color:var(--ink);letter-spacing:.04em;user-select:all}
+.copy{font-family:var(--f-label);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;border:1px solid var(--line);padding:6px 10px;color:var(--muted);transition:color .3s,border-color .3s}
+.copy:hover{color:var(--ink);border-color:var(--ink)}
+.creds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);margin-top:10px}
+.creds > div{padding:18px 14px 0 0;display:grid;gap:4px;align-content:start}
+.creds > div + div{padding-left:16px;border-left:1px solid var(--line)}
+.creds b{font-family:var(--f-display);font-weight:500;font-size:1.65rem;line-height:1.1}
+.creds span{font-size:.82rem;color:var(--muted);line-height:1.4}
+@media (max-width:520px){.creds{grid-template-columns:1fr}.creds > div + div{padding-left:0;border-left:0;border-top:1px solid var(--line)}.creds > div{padding:14px 0}}
+.arch{position:relative;justify-self:center;width:min(100% - 24px,460px)}
+@media (max-width:899px){.arch{width:min(100% - 24px,340px)}}
+.arch .frame{border-radius:999px 999px 6px 6px;overflow:hidden;aspect-ratio:4/5;max-width:100%;background:var(--line)}
+.arch .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.arch .ring{position:absolute;inset:-12px;border:1px solid var(--champ-soft);border-radius:999px 999px 8px 8px;pointer-events:none}
+
+.arch .tag{position:absolute;left:-8px;bottom:28px;background:var(--surface);border:1px solid var(--line);padding:14px 18px;display:grid;gap:2px;max-width:240px;box-shadow:0 18px 40px -24px rgba(40,30,20,.45)}
+@media (min-width:600px){.arch .tag{left:-34px}}
+.arch .tag b{font-family:var(--f-display);font-size:1.15rem;font-weight:500;line-height:1.2}
+.arch .tag span{font-size:.78rem;color:var(--muted)}
+
+
+.arch .frame.logo-panel{background:var(--deep);display:grid;place-content:center;justify-items:center;gap:14px;padding:40px 24px;text-align:center}
+.lp-mark{width:min(46%,190px);aspect-ratio:1;height:auto}
+.lp-name{font-family:var(--f-display);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.5rem);letter-spacing:.18em;color:var(--on-deep);margin-top:6px}
+.lp-sub{font-family:var(--f-label);font-size:.66rem;letter-spacing:.38em;color:var(--on-deep-muted)}
+.lp-line{width:56px;height:1px;background:var(--champ-soft);margin:6px 0}
+.svc{border-top:1px solid var(--line);padding-top:26px}
+.svc-dia{width:16px;height:16px;color:var(--champ)}
+.svc-grid{display:grid;gap:22px}
+@media (min-width:760px){.svc-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.svc{display:grid;gap:16px;text-align:left;align-content:start}
+.svc .ph{aspect-ratio:3/4;overflow:hidden;background:var(--line);max-width:100%}
+.svc .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.svc:hover .ph img{transform:scale(1.04)}
+.svc .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.svc .row h3{font-size:1.75rem}
+.svc .price{font-family:var(--f-display);font-size:1.3rem;font-weight:500;white-space:nowrap}
+.svc p{color:var(--muted);font-size:.95rem}
+.svc .meta{font-family:var(--f-label);font-size:.74rem;letter-spacing:.1em;color:var(--champ)}
+
+.strip{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:760px){.strip{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.strip button{aspect-ratio:3/4;overflow:hidden;background:var(--line);max-width:100%}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.strip button:hover img{transform:scale(1.05)}
+
+.rev-tease{display:grid;gap:22px}
+@media (min-width:900px){.rev-tease{grid-template-columns:.8fr 1.1fr 1.1fr;align-items:stretch}}
+.score{display:grid;gap:10px;align-content:center;padding:28px;background:var(--deep);color:var(--on-deep)}
+.score .big{font-family:var(--f-display);font-size:4.6rem;font-weight:300;line-height:.9}
+.score .sub{color:var(--on-deep-muted);font-size:.9rem}
+
+.band{background:var(--deep);color:var(--on-deep);margin-top:96px}
+.band .wrap{padding-block:64px;display:grid;gap:36px}
+@media (min-width:900px){.band .wrap{grid-template-columns:1fr 1fr 1fr;align-items:start}}
+.band h2{color:var(--on-deep)}
+.band h2 em{color:var(--champ-soft)}
+:root[data-theme="dark"] .band h2 em{color:var(--champ)}
+.band .loc{display:grid;gap:8px;border-top:1px solid color-mix(in srgb,var(--on-deep) 22%,transparent);padding-top:18px}
+.band .loc .label{color:var(--on-deep-muted)}
+.band .loc b{font-family:var(--f-display);font-size:1.5rem;font-weight:500}
+.band .loc p{color:var(--on-deep-muted);font-size:.95rem}
+.band .btn-dark{background:var(--on-deep);color:var(--deep)}
+.band .btn-dark:hover{background:var(--champ-soft);color:var(--deep)}
+
+/* ---------- stars ---------- */
+.stars{display:inline-flex;gap:3px;color:var(--star)}
+.stars svg{width:16px;height:16px;fill:currentColor}
+.stars.lg svg{width:22px;height:22px}
+.play .stars svg{animation:pop .55s var(--ease) backwards;animation-delay:calc(var(--i) * 70ms + var(--d,0ms))}
+@keyframes pop{from{transform:scale(.3) rotate(-25deg);opacity:.15}}
+@media (prefers-reduced-motion:reduce){.play .stars svg{animation:none}}
+
+/* review card */
+.rc{background:var(--surface);border:1px solid var(--line);padding:24px;display:grid;gap:14px;align-content:start;break-inside:avoid;margin:0 0 18px}
+.rc q{quotes:none;font-family:var(--f-display);font-size:1.2rem;line-height:1.45;font-weight:400}
+.rc footer{display:flex;align-items:center;gap:12px;margin-top:4px}
+.av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--bg);border:1px solid var(--line);font-family:var(--f-label);font-size:.78rem;letter-spacing:.06em;color:var(--champ);flex:none}
+.rc .who{display:grid;line-height:1.3;min-width:0}
+.rc .who b{font-weight:500;font-size:.92rem}
+.rc .who span{font-size:.76rem;color:var(--muted)}
+.rc .top-row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.chip{font-family:var(--f-label);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:4px 8px}
+
+/* ---------- zabiegi ---------- */
+.menu{background:var(--surface);border:1px solid var(--line);padding:clamp(22px,4vw,48px);display:grid;gap:4px}
+.menu-title{font-family:var(--f-label);letter-spacing:.3em;text-transform:uppercase;font-size:clamp(.9rem,2.2vw,1.2rem);text-align:center;color:var(--ink);margin-bottom:18px}
+.mi{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 16px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.mi:last-child{border-bottom:0}
+.mi .dia{width:12px;height:12px;color:var(--champ);transform:translateY(1px)}
+.mi .nm{font-family:var(--f-display);font-weight:600;font-size:clamp(1.3rem,2.6vw,1.6rem);line-height:1.15}
+.mi .ds{grid-column:2;font-size:.88rem;color:var(--muted)}
+.mi .pr{font-family:var(--f-display);font-size:1.45rem;font-weight:500;white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+.mi .pr small{display:block;font-family:var(--f-body);font-size:.75rem;color:var(--muted);font-weight:300}
+.note{font-size:.85rem;color:var(--muted)}
+
+.detail{display:grid;gap:28px;align-items:center;padding-block:36px;border-top:1px solid var(--line)}
+@media (min-width:860px){.detail{grid-template-columns:.8fr 1.2fr;gap:56px}.detail.flip .ph{order:2}}
+.detail .ph{aspect-ratio:4/5;overflow:hidden;max-width:100%;background:var(--line)}
+.detail .ph img{width:100%;height:100%;object-fit:cover}
+.detail .tx{display:grid;gap:16px;min-width:0}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;padding-top:6px}
+.facts div{display:grid}
+.facts span{font-family:var(--f-label);font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.facts b{font-family:var(--f-display);font-size:1.35rem;font-weight:500}
+.ticks{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.ticks li{display:grid;grid-template-columns:18px 1fr;gap:10px;color:var(--muted)}
+.ticks li::before{content:"";width:10px;height:1px;background:var(--champ);margin-top:.85em}
+
+.heal{display:grid;gap:28px;align-items:center}
+@media (min-width:860px){.heal{grid-template-columns:1fr 1fr;gap:56px}}
+.heal-ph{position:relative;aspect-ratio:3/4;overflow:hidden;max-width:min(100%,460px);justify-self:center;width:100%;border-radius:999px 999px 4px 4px;background:var(--line)}
+.heal-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .6s ease,transform 1.2s var(--ease)}
+.heal-ph img.off{opacity:0;transform:scale(1.04)}
+.seg{display:inline-grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);position:relative;background:var(--surface)}
+.seg button{position:relative;z-index:1;font-family:var(--f-label);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:13px 18px;color:var(--muted);transition:color .4s}
+.seg button[aria-pressed="true"]{color:var(--bg)}
+.seg .knob{position:absolute;top:0;bottom:0;left:0;width:50%;background:var(--ink);transition:transform .45s var(--ease)}
+.seg.r .knob{transform:translateX(100%)}
+.heal-cap{font-size:.95rem;color:var(--muted);min-height:3.2em}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:st}
+@media (min-width:900px){.steps{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.steps li{counter-increment:st;display:grid;gap:8px;padding:22px 18px 22px 0;border-top:1px solid var(--line);align-content:start}
+@media (min-width:900px){.steps li{padding:22px 20px 0 0}}
+.steps li::before{content:counter(st,decimal-leading-zero);font-family:var(--f-display);font-style:italic;font-size:1.5rem;color:var(--champ)}
+.steps b{font-weight:500}
+.steps span{font-size:.9rem;color:var(--muted)}
+
+.acc{display:grid;border-top:1px solid var(--line)}
+.acc details{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-family:var(--f-display);font-size:1.35rem;font-weight:500}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary .pm{width:14px;height:14px;position:relative;flex:none}
+.acc summary .pm::before,.acc summary .pm::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--ink);transition:transform .35s var(--ease)}
+.acc summary .pm::after{transform:rotate(90deg)}
+.acc details[open] summary .pm::after{transform:rotate(0)}
+.acc .body{padding:0 0 22px;display:grid;gap:12px;color:var(--muted);max-width:70ch}
+.acc .body ul{margin:0;padding-left:18px;display:grid;gap:4px}
+
+/* ---------- efekty ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{font-family:var(--f-label);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:10px 16px;border:1px solid var(--line);color:var(--muted);transition:all .3s}
+.filters button sup{font-size:.62rem;margin-left:4px;color:var(--champ)}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:700px){.gal{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}}
+@media (min-width:1050px){.gal{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.gi{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--line);text-align:left;max-width:100%;transition:opacity .4s,transform .4s var(--ease)}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.gi:hover img{transform:scale(1.05)}
+.gi figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 12px 12px;background:linear-gradient(transparent,rgba(25,20,18,.72));color:#f4eee6;font-size:.8rem;line-height:1.35}
+.gi.hide{display:none}
+.gi.pop{animation:rise .55s var(--ease) backwards}
+
+.lb{position:fixed;inset:0;z-index:80;background:rgba(20,17,15,.92);display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));opacity:0;transition:opacity .3s}
+.lb.on{opacity:1}
+.lb figure{margin:0;display:grid;gap:12px;justify-items:center;max-width:min(92vw,560px)}
+.lb img{max-height:78vh;width:auto;object-fit:contain}
+.lb figcaption{color:#e9e1d6;font-size:.92rem;text-align:center}
+.lb .x,.lb .pv,.lb .nx{position:absolute;color:#f4eee6;width:48px;height:48px;display:grid;place-items:center;font-size:1.6rem;font-family:var(--f-display)}
+.lb .x{top:calc(12px + env(safe-area-inset-top,0px));right:calc(12px + env(safe-area-inset-right,0px))}
+.lb .pv{left:calc(8px + env(safe-area-inset-left,0px));top:50%;transform:translateY(-50%)}
+.lb .nx{right:calc(8px + env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%)}
+
+/* ---------- opinie ---------- */
+.op{display:grid;gap:32px;align-items:start}
+@media (min-width:960px){.op{grid-template-columns:320px minmax(0,1fr);gap:48px}.op .sum{position:sticky;top:120px}}
+.sum{background:var(--deep);color:var(--on-deep);padding:32px;display:grid;gap:18px}
+.sum .big{font-family:var(--f-display);font-size:5.4rem;font-weight:300;line-height:.85}
+.sum .label{color:var(--on-deep-muted)}
+.dist{display:grid;gap:7px}
+.dist div{display:grid;grid-template-columns:22px 1fr 26px;gap:10px;align-items:center;font-size:.8rem;color:var(--on-deep-muted);font-variant-numeric:tabular-nums}
+.dist i{height:4px;background:color-mix(in srgb,var(--on-deep) 16%,transparent);position:relative;overflow:hidden;display:block}
+.dist i::after{content:"";position:absolute;inset:0;width:var(--w);background:var(--star);transform-origin:left}
+.play .dist i::after{animation:grow 1s var(--ease) backwards .25s}
+@keyframes grow{from{transform:scaleX(0)}}
+@media (prefers-reduced-motion:reduce){.play .dist i::after{animation:none}}
+.sum .btn{border-color:color-mix(in srgb,var(--on-deep) 30%,transparent);color:var(--on-deep)}
+.sum .btn:hover{border-color:var(--on-deep)}
+.feat{display:grid;gap:18px;padding-bottom:32px;margin-bottom:28px;border-bottom:1px solid var(--line)}
+.feat q{quotes:none;font-family:var(--f-display);font-weight:300;font-style:italic;font-size:clamp(1.6rem,3.2vw,2.3rem);line-height:1.25;text-wrap:pretty}
+.feat q::before{content:"\201E";color:var(--champ);margin-right:2px}
+.feat q::after{content:"\201D";color:var(--champ)}
+.masonry{columns:1;column-gap:18px}
+.more-revs{margin-top:4px;width:100%}
+@media (min-width:640px){.more-revs{width:auto}}
+@media (min-width:640px){.masonry{columns:2}}
+
+/* ---------- o mnie ---------- */
+.about{display:grid;gap:40px;align-items:start}
+@media (min-width:900px){.about{grid-template-columns:.9fr 1.1fr;gap:64px}}
+.about .ph{overflow:hidden;max-width:100%;background:var(--line);aspect-ratio:820/716}
+.about .ph img{width:100%;height:100%;object-fit:cover}
+.about .tx{display:grid;gap:20px;min-width:0}
+.about .tx p{max-width:60ch}
+.badge{display:flex;gap:16px;align-items:center;border:1px solid var(--line);padding:18px 20px;background:var(--surface)}
+.badge svg{width:44px;height:44px;flex:none;color:var(--champ)}
+.badge b{font-family:var(--f-display);font-size:1.3rem;font-weight:500;display:block;line-height:1.2}
+.badge span{font-size:.85rem;color:var(--muted)}
+.pillars{display:grid;gap:22px}
+@media (min-width:860px){.pillars{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pil{display:grid;gap:14px;align-content:start}
+.pil .ph{aspect-ratio:4/5;overflow:hidden;background:var(--line);max-width:100%}
+.pil .ph img{width:100%;height:100%;object-fit:cover}
+.pil p{color:var(--muted);font-size:.95rem}
+
+/* ---------- kontakt ---------- */
+.ct{display:grid;gap:24px}
+@media (min-width:900px){.ct{grid-template-columns:1.1fr .9fr}}
+.callcard{background:var(--deep);color:var(--on-deep);padding:clamp(26px,4vw,44px);display:grid;gap:18px;align-content:start}
+.callcard .label{color:var(--on-deep-muted)}
+.callcard .num{font-family:var(--f-display);font-weight:400;font-size:clamp(2.2rem,5vw,3.4rem);letter-spacing:.03em;line-height:1;user-select:all}
+.callcard p{color:var(--on-deep-muted);max-width:46ch}
+.callcard .row{display:flex;flex-wrap:wrap;gap:10px}
+.callcard .btn-dark{background:var(--on-deep);color:var(--deep)}
+.callcard .btn-dark:hover{background:var(--champ-soft)}
+.callcard .copy{border-color:color-mix(in srgb,var(--on-deep) 30%,transparent);color:var(--on-deep);padding:14px 18px;font-size:.72rem}
+.socials{display:grid;gap:0;border-top:1px solid color-mix(in srgb,var(--on-deep) 18%,transparent)}
+.socials a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid color-mix(in srgb,var(--on-deep) 18%,transparent);text-decoration:none;color:var(--on-deep)}
+.socials a span{color:var(--on-deep-muted);font-size:.85rem}
+.socials a:hover b{color:var(--champ-soft)}
+.socials b{font-weight:400}
+.locs{display:grid;gap:18px}
+.locc{background:var(--surface);border:1px solid var(--line);padding:26px;display:grid;gap:12px}
+.locc h3{font-size:1.9rem}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;font-size:.92rem;font-variant-numeric:tabular-nums}
+.hours dt{color:var(--muted)}
+.hours dd{margin:0}
+.hours .today{color:var(--champ);font-weight:500}
+
+footer.foot{border-top:1px solid var(--line)}
+footer.foot .wrap{padding-block:36px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px;font-size:.82rem;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:12px 20px;font-size:.85rem;opacity:0;transition:all .35s var(--ease);z-index:90;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="champ" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100" y2="100">
+      <stop offset="0" stop-color="#d9cab1"/><stop offset=".55" stop-color="#bba584"/><stop offset="1" stop-color="#9f8763"/>
+    </linearGradient>
+    <symbol id="mk" viewBox="0 0 100 100">
+      <line x1="3" y1="16" x2="3" y2="97" stroke="url(#champ)" stroke-width="1.8"/>
+      <polygon points="9,8 21,8 49,77 43,87" fill="url(#champ)"/>
+      <line x1="44" y1="85" x2="67" y2="57" stroke="url(#champ)" stroke-width="1.8"/>
+      <line x1="56" y1="57" x2="96" y2="7" stroke="url(#champ)" stroke-width="1.8"/>
+      <polygon points="54,60 61,52 96,97 86,97" fill="url(#champ)"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path d="M12 2.6l2.85 6.07 6.65.74-4.95 4.52 1.37 6.55L12 17.14 6.08 20.48l1.37-6.55L2.5 9.41l6.65-.74z"/></symbol>
+    <symbol id="dia" viewBox="0 0 12 12"><path d="M6 0C6.6 3.6 8.4 5.4 12 6 8.4 6.6 6.6 8.4 6 12 5.4 8.4 3.6 6.6 0 6 3.6 5.4 5.4 3.6 6 0z" fill="currentColor"/></symbol>
+    <symbol id="arr" viewBox="0 0 18 8"><path d="M0 4h16M13 1l3 3-3 3" fill="none" stroke="currentColor" stroke-width="1"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#start" data-go="start" aria-label="MK Martyna Kot, strona główna">
+      <svg class="mark" aria-hidden="true"><use href="#mk"/></svg>
+      <span class="wm"><b>MARTYNA KOT</b><small>PERMANENT MAKEUP</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Sekcje strony">
+      <button data-go="start" aria-current="page">Start</button>
+      <button data-go="zabiegi">Zabiegi i cennik</button>
+      <button data-go="efekty">Efekty</button>
+      <button data-go="opinie">Opinie</button>
+      <button data-go="o-mnie">O mnie</button>
+      <button data-go="kontakt">Kontakt</button>
+      <span class="ind" id="ind" aria-hidden="true"></span>
+    </nav>
+    <a class="call-mini" href="tel:+48574082772">574 082 772</a>
+  </div>
+  <span class="stroke" id="stroke" aria-hidden="true"></span>
+</header>
+
+<main id="main">
+
+<!-- =============== START =============== -->
+<section class="panel play" data-panel="start" aria-label="Start">
+  <div class="wrap">
+    <div class="hero sec">
+      <div class="hero-copy">
+        <span class="label rv" style="--s:0">Linergistka · Będzin | Zamość</span>
+        <h1 class="rv" style="--s:1">Naturalny makijaż permanentny <em>brwi, ust i&nbsp;powiek</em></h1>
+        <p class="lede rv" style="--s:2">Lekki efekt, który po wygojeniu podkreśla urodę, a nie ją zmienia. Kształt, technikę i kolor dobieram razem z Tobą, do rysów twarzy i typu skóry.</p>
+        <div class="hero-ctas rv" style="--s:3">
+          <button class="btn btn-dark" data-go="kontakt">Umów wizytę</button>
+          <button class="btn btn-line" data-go="zabiegi">Zobacz cennik</button>
+        </div>
+        <div class="phone-line rv" style="--s:4">
+          <span>Zapisy telefonicznie:</span><strong>574 082 772</strong>
+          <button class="copy" data-copy="574 082 772">Kopiuj numer</button>
+        </div>
+        <div class="creds rv" style="--s:5">
+          <div><b>9 lat</b><span>doświadczenia w makijażu permanentnym</span></div>
+          <div><b>Nr 450</b><span>PRO ARTIST World Association</span></div>
+          <div><b>5,0 <span class="stars" aria-hidden="true" style="vertical-align:2px"><svg style="--i:0"><use href="#star"/></svg></span></b><span>16 opinii w Google</span></div>
+        </div>
+      </div>
+      <div class="arch rv" style="--s:2">
+        <div class="ring" aria-hidden="true"></div>
+        <div class="frame logo-panel" role="img" aria-label="Logo MK Martyna Kot">
+          <svg class="lp-mark" aria-hidden="true"><use href="#mk"/></svg>
+          <span class="lp-name">MARTYNA KOT</span>
+          <span class="lp-sub">PERMANENT MAKEUP</span>
+          <span class="lp-line" aria-hidden="true"></span>
+          <span class="lp-sub">BĘDZIN · ZAMOŚĆ</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head rv" style="--s:0">
+        <div><span class="label">Zabiegi</span><h2>Trzy zabiegi, <em>jeden cel</em>: naturalność</h2></div>
+        <button class="link" data-go="zabiegi">Pełny cennik <svg class="arrow"><use href="#arr"/></svg></button>
+      </div>
+      <div class="svc-grid">
+        <button class="svc rv" style="--s:1" data-go="zabiegi" data-target="d-brwi">
+          <svg class="svc-dia" aria-hidden="true"><use href="#dia"/></svg>
+          <span class="meta">Ombre Brows · 1,5–2 h</span>
+          <div class="row"><h3>Brwi</h3><span class="price">900 zł</span></div>
+          <p>Miękki, pudrowy cień, który po wygojeniu wygląda jak dobrze pomalowane brwi.</p>
+        </button>
+        <button class="svc rv" style="--s:2" data-go="zabiegi" data-target="d-usta">
+          <svg class="svc-dia" aria-hidden="true"><use href="#dia"/></svg>
+          <span class="meta">Ombre Lips, Natural Lips · 2–3 h</span>
+          <div class="row"><h3>Usta</h3><span class="price">900 zł</span></div>
+          <p>Wyrównany koloryt i delikatny kontur. Bez efektu szminki, za to świeżo od rana.</p>
+        </button>
+        <button class="svc rv" style="--s:3" data-go="zabiegi" data-target="d-kreska">
+          <svg class="svc-dia" aria-hidden="true"><use href="#dia"/></svg>
+          <span class="meta">Kreska cieniowana · 1,5–2 h</span>
+          <div class="row"><h3>Kreska</h3><span class="price">800 zł</span></div>
+          <p>Górna i dolna, subtelna albo wyraźniejsza. Spojrzenie podkreślone bez codziennego malowania.</p>
+        </button>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head rv" style="--s:0">
+        <div><span class="label">Opinie klientek</span><h2>Co mówią <em>po wizycie</em></h2></div>
+        <button class="link" data-go="opinie">Wszystkie opinie <svg class="arrow"><use href="#arr"/></svg></button>
+      </div>
+      <div class="rev-tease" id="tease">
+        <div class="score rv" style="--s:1">
+          <span class="label" style="color:var(--on-deep-muted)">Google</span>
+          <span class="big">5,0</span>
+          <span class="stars lg" data-stars="5"></span>
+          <span class="sub">Średnia z 16 opinii. Każda na pięć gwiazdek.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="band">
+    <div class="wrap">
+      <div style="display:grid;gap:18px;align-content:start">
+        <span class="label" style="color:var(--on-deep-muted)">Dwa gabinety</span>
+        <h2>Będzin <em>i</em> Zamość</h2>
+        <div><button class="btn btn-dark" data-go="kontakt">Godziny i dojazd</button></div>
+      </div>
+      <div class="loc">
+        <span class="label">Śląskie</span>
+        <b>Będzin</b>
+        <p>Aleja H. Kołłątaja 46, 42-500 Będzin<br>Pon.–czw. 9:00–20:00, pt. 9:00–18:00, sob. 9:00–15:00</p>
+      </div>
+      <div class="loc">
+        <span class="label">Lubelskie · nowy gabinet</span>
+        <b>Zamość</b>
+        <p>Moje nowe miejsce, stworzone od podstaw z myślą o makijażu permanentnym. Adres i wolne terminy podam przy zapisie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== ZABIEGI =============== -->
+<section class="panel" data-panel="zabiegi" aria-label="Zabiegi i cennik" hidden>
+  <div class="wrap">
+    <div class="sec">
+      <div class="sec-head rv" style="--s:0">
+        <div><span class="label">Zabiegi i cennik</span><h2>Cennik <em>makijażu permanentnego</em></h2></div>
+        <p class="lede" style="max-width:42ch">W cenie jest projekt kształtu, dobór koloru i sam zabieg. Dopigmentowanie po 6–8 tygodniach rozliczam osobno.</p>
+      </div>
+      <div class="menu rv" style="--s:1">
+        <div class="menu-title">Cennik · makijaż permanentny</div>
+        <div class="mi"><svg class="dia"><use href="#dia"/></svg><span class="nm">Brwi permanentne</span><span class="pr">900 zł</span><span class="ds">1,5–2 h · Ombre Brows</span></div>
+        <div class="mi"><svg class="dia"><use href="#dia"/></svg><span class="nm">Usta permanentne</span><span class="pr">900 zł</span><span class="ds">2–3 h · Ombre Lips, Natural Lips</span></div>
+        <div class="mi"><svg class="dia"><use href="#dia"/></svg><span class="nm">Kreska permanentna</span><span class="pr">800 zł</span><span class="ds">1,5–2 h · kreska cieniowana, górna i dolna</span></div>
+        <div class="mi"><svg class="dia"><use href="#dia"/></svg><span class="nm">Dopigmentowanie po 6–8 tygodniach</span><span class="pr">150 zł</span><span class="ds">0,5–1 h · dla makijażu wykonanego w moim gabinecie</span></div>
+        <div class="mi"><svg class="dia"><use href="#dia"/></svg><span class="nm">Odświeżenie makijażu do półtora roku</span><span class="pr">50%<small>ceny całkowitej</small></span><span class="ds">Dla makijażu wykonanego u mnie w ciągu ostatnich 18 miesięcy</span></div>
+        <div class="mi"><svg class="dia"><use href="#dia"/></svg><span class="nm">Laserowe usuwanie</span><span class="pr">200 zł</span><span class="ds">Usuwanie makijażu permanentnego laserem</span></div>
+      </div>
+      <p class="note rv" style="--s:2">Po rezerwacji terminu obowiązuje zadatek 200 zł, wliczany w cenę zabiegu.</p>
+    </div>
+
+    <div class="sec">
+      <div class="detail rv" id="d-brwi" style="--s:0">
+        <div class="ph"><img src="img/p15.jpg" alt="Wygojone brwi po jednym zabiegu" loading="lazy" width="720" height="960"></div>
+        <div class="tx">
+          <span class="label">Ombre Brows · soft ombre</span>
+          <h2>Brwi permanentne</h2>
+          <p>Zaraz po zabiegu kolor jest intensywniejszy. Po wygojeniu robi się delikatniejszy i bardziej naturalny, dlatego pigment i intensywność dobieram do gęstości i koloru Twoich brwi. Przy ciemnej, gęstej oprawie zbyt mocny efekt potrafi obciążyć twarz, więc celuję w lekkość.</p>
+          <ul class="ticks">
+            <li>Przed zabiegiem mierzę i rysuję projekt kształtu</li>
+            <li>Wyrównanie asymetrii i wypełnienie przerzedzeń</li>
+            <li>Korektę starszego makijażu wykonuję po wcześniejszej konsultacji</li>
+          </ul>
+          <div class="facts"><div><span>Czas</span><b>1,5–2 h</b></div><div><span>Cena</span><b>900 zł</b></div><div><span>Dopigmentowanie</span><b>150 zł</b></div></div>
+        </div>
+      </div>
+      <div class="detail flip rv" id="d-usta" style="--s:0">
+        <div class="ph"><img src="img/p04.jpg" alt="Usta permanentne, efekt naturalny" loading="lazy" width="720" height="960"></div>
+        <div class="tx">
+          <span class="label">Ombre Lips · Natural Lips</span>
+          <h2>Usta permanentne</h2>
+          <p>Makijaż ust nie musi wyglądać jak szminka. Moim celem jest wyrównanie koloru i konturu oraz świeży, zdrowy wygląd. Po wygojeniu pigment łagodnieje, a usta wyglądają tak, jakby zawsze miały ten kolor.</p>
+          <ul class="ticks">
+            <li>Wyrównanie kolorytu i delikatne podkreślenie konturu</li>
+            <li>Optyczne powiększenie bez przerysowania</li>
+            <li>Kolor dobieram indywidualnie do karnacji</li>
+          </ul>
+          <div class="facts"><div><span>Czas</span><b>2–3 h</b></div><div><span>Cena</span><b>900 zł</b></div><div><span>Dopigmentowanie</span><b>150 zł</b></div></div>
+        </div>
+      </div>
+      <div class="detail rv" id="d-kreska" style="--s:0">
+        <div class="ph"><img src="img/p17.jpg" alt="Kreska cieniowana górna i dolna" loading="lazy" width="720" height="957"></div>
+        <div class="tx">
+          <span class="label">Kreska cieniowana</span>
+          <h2>Kreska permanentna</h2>
+          <p>Górna, dolna albo obie. Może być ledwie zaznaczona przy linii rzęs albo wyraźniejsza, jeśli zależy Ci na mocniej podkreślonym oku. Spojrzenie zyskuje wyrazistość, a całość dalej wygląda kobieco i estetycznie.</p>
+          <ul class="ticks">
+            <li>Kreska cieniowana górna i dolna</li>
+            <li>Intensywność ustalamy razem przed zabiegiem</li>
+            <li>Bez codziennego malowania i poprawiania</li>
+          </ul>
+          <div class="facts"><div><span>Czas</span><b>1,5–2 h</b></div><div><span>Cena</span><b>800 zł</b></div><div><span>Dopigmentowanie</span><b>150 zł</b></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="heal">
+        <div class="heal-ph rv" style="--s:0">
+          <img id="healA" src="img/p23.jpg" alt="Brwi zaraz po zabiegu, soft ombre" loading="lazy">
+          <img id="healB" class="off" src="img/p22.jpg" alt="Brwi po wygojeniu po jednym zabiegu" loading="lazy">
+        </div>
+        <div class="rv" style="--s:1;display:grid;gap:20px;align-content:center;min-width:0">
+          <span class="label">Jak goi się makijaż permanentny</span>
+          <h2>Zaraz po zabiegu <em>i&nbsp;po wygojeniu</em></h2>
+          <div><div class="seg" id="seg"><span class="knob" aria-hidden="true"></span><button aria-pressed="true" data-h="a">Zaraz po</button><button aria-pressed="false" data-h="b">Po wygojeniu</button></div></div>
+          <p class="heal-cap" id="healCap">Soft ombre bezpośrednio po pigmentacji. Kolor jest intensywniejszy i tak właśnie ma być.</p>
+          <p class="note">Dwa przykłady z mojego gabinetu, dwie różne klientki. Efekt końcowy zawsze jest subtelniejszy niż zaraz po zabiegu, dlatego cierpliwość to podstawa.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head rv" style="--s:0"><div><span class="label">Przebieg</span><h2>Od pierwszego telefonu <em>do odświeżenia</em></h2></div></div>
+      <ol class="steps rv" style="--s:1">
+        <li><b>Kontakt i termin</b><span>Telefonicznie lub przez Facebook. Zadatek 200 zł w ciągu 3 dni roboczych.</span></li>
+        <li><b>Projekt</b><span>Mierzę i rysuję kształt, dobieramy technikę i kolor. Zaczynam dopiero, gdy jesteś zadowolona z rysunku.</span></li>
+        <li><b>Zabieg</b><span>Pracuję sterylnymi narzędziami, na przygotowanym stanowisku i w spokojnym tempie.</span></li>
+        <li><b>Gojenie i dopigmentowanie</b><span>Kolor łagodnieje. Po 6–8 tygodniach wzmacniam efekt tam, gdzie trzeba.</span></li>
+        <li><b>Odświeżenie</b><span>Pigment z czasem jaśnieje. Odświeżenie zwykle między 12. a 24. miesiącem.</span></li>
+      </ol>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head rv" style="--s:0"><div><span class="label">Zanim się umówisz</span><h2>Ważne <em>przed wizytą</em></h2></div></div>
+      <div class="acc rv" style="--s:1">
+        <details open>
+          <summary>Zapisy i zadatek<span class="pm" aria-hidden="true"></span></summary>
+          <div class="body">
+            <p>Zapisuję telefonicznie (574 082 772) albo przez Facebook. Nie przyjmuję zapisów przez SMS. Jeśli nie odbieram, oddzwonię najszybciej, jak to możliwe.</p>
+            <p>Po rezerwacji obowiązuje zadatek 200 zł, wpłacony na konto w ciągu 3 dni roboczych. Bez wpłaty termin przepada. Zadatek odejmuję od ceny zabiegu.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Przeciwwskazania<span class="pm" aria-hidden="true"></span></summary>
+          <div class="body">
+            <p>Przy leczonej cukrzycy lub chorobie tarczycy skontaktuj się ze mną przed zapisem. Zabiegu nie wykonuję, gdy:</p>
+            <ul>
+              <li>przyjmujesz leki rozrzedzające krew lub przeciwzakrzepowe,</li>
+              <li>jesteś w trakcie antybiotykoterapii, choroby lub masz osłabiony organizm,</li>
+              <li>jesteś w ciąży lub karmisz piersią,</li>
+              <li>chorujesz na łuszczycę,</li>
+              <li>w miejscu pigmentacji masz opryszczkę lub aktywny trądzik.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Czego nie robić przed zabiegiem<span class="pm" aria-hidden="true"></span></summary>
+          <div class="body">
+            <ul>
+              <li>Nie pij alkoholu i nie przyjmuj innych używek.</li>
+              <li>Nie rób henny.</li>
+              <li>Odpowiednio wcześniej odstaw odżywki do rzęs i brwi rozszerzające naczynka, bo mogą powodować rozlewanie pigmentu.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Masz już makijaż permanentny?<span class="pm" aria-hidden="true"></span></summary>
+          <div class="body"><p>Zawsze daj znać o wcześniejszym makijażu i najlepiej wyślij zdjęcie. Ocenię, czy podejmę się korekty, czy lepiej zacząć od laserowego usuwania.</p></div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== EFEKTY =============== -->
+<section class="panel" data-panel="efekty" aria-label="Efekty" hidden>
+  <div class="wrap">
+    <div class="sec">
+      <div class="sec-head rv" style="--s:0">
+        <div><span class="label">Efekty</span><h2>Moje <em>prace</em></h2></div>
+        <div class="filters" id="filters" role="group" aria-label="Filtruj prace">
+          <button aria-pressed="true" data-f="all">Wszystkie<sup id="c-all"></sup></button>
+          <button aria-pressed="false" data-f="brwi">Brwi<sup id="c-brwi"></sup></button>
+          <button aria-pressed="false" data-f="usta">Usta<sup id="c-usta"></sup></button>
+          <button aria-pressed="false" data-f="kreska">Kreska<sup id="c-kreska"></sup></button>
+        </div>
+      </div>
+      <div class="gal rv" style="--s:1" id="gal"></div>
+      <p class="note rv" style="--s:2">Więcej prac na Instagramie <a href="https://www.instagram.com/martynakot.pmu/" target="_blank" rel="noopener">@martynakot.pmu</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =============== OPINIE =============== -->
+<section class="panel" data-panel="opinie" aria-label="Opinie" hidden>
+  <div class="wrap">
+    <div class="sec">
+      <div class="sec-head rv" style="--s:0"><div><span class="label">Opinie</span><h2>Opinie <em>klientek</em></h2></div></div>
+      <div class="op">
+        <aside class="sum rv" style="--s:1">
+          <span class="label">Ocena w Google</span>
+          <span class="big">5,0</span>
+          <span class="stars lg" data-stars="5" style="--d:200ms"></span>
+          <div class="dist" aria-label="Rozkład ocen: 16 opinii pięciogwiazdkowych">
+            <div><span>5★</span><i style="--w:100%"></i><span>16</span></div>
+            <div><span>4★</span><i style="--w:0%"></i><span>0</span></div>
+            <div><span>3★</span><i style="--w:0%"></i><span>0</span></div>
+            <div><span>2★</span><i style="--w:0%"></i><span>0</span></div>
+            <div><span>1★</span><i style="--w:0%"></i><span>0</span></div>
+          </div>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=MK%20Martyna%20Kot%20B%C4%99dzin&amp;query_place_id=ChIJnWm0AzTRFkcRlTsXfeN3uIM" target="_blank" rel="noopener">Wystaw opinię</a>
+        </aside>
+        <div style="min-width:0">
+          <div class="feat rv" style="--s:2">
+            <span class="stars" data-stars="5" style="--d:350ms"></span>
+            <q>Pani Martyna dokładnie wysłuchała moich oczekiwań, doradziła najlepszy kształt i kolor. Efekt końcowy przerósł moje oczekiwania!</q>
+            <div class="rc" style="border:0;padding:0;background:none;margin:0"><footer><span class="av">MC</span><span class="who"><b>Monika Cz</b><span>Brwi permanentne · Google</span></span></footer></div>
+          </div>
+          <div class="masonry rv" style="--s:3" id="revs"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== O MNIE =============== -->
+<section class="panel" data-panel="o-mnie" aria-label="O mnie" hidden>
+  <div class="wrap">
+    <div class="sec">
+      <div class="about">
+        <div class="ph rv" style="--s:0"><img src="img/p02.jpg" alt="Martyna Kot" loading="lazy" width="820" height="716"></div>
+        <div class="tx">
+          <span class="label rv" style="--s:1">O mnie</span>
+          <h2 class="rv" style="--s:1">Swoją pasję <em>przekułam w&nbsp;zawód</em></h2>
+          <p class="rv" style="--s:2">Jestem Martyna, linergistka. W branży beauty pracuję od 2018 roku. Kiedy zaczynałam, nie wiedziałam, czy to się uda. Dziś mam dwa gabinety, w Będzinie i w Zamościu, i klientki, które wracają do mnie od lat.</p>
+          <p class="rv" style="--s:3">Poza byciem mamą i partnerką praca to mój drugi dom. Codziennie biorę odpowiedzialność za Wasz wygląd i samopoczucie. Jeśli moja praca pomaga komuś lepiej czuć się ze sobą, to najlepszy dowód, że ma sens.</p>
+          <p class="rv" style="--s:4">Mimo doświadczenia stale się szkolę, ostatnio z laserowego usuwania makijażu permanentnego. Pokora wobec zawodu nie pozwala mi stać w miejscu.</p>
+          <div class="badge rv" style="--s:5">
+            <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="22" cy="22" r="16" fill="none" stroke="currentColor" stroke-width=".6" stroke-dasharray="2 2"/><use href="#star" x="12" y="12" width="20" height="20" fill="currentColor"/></svg>
+            <div><b>PRO ARTIST World Association · nr 450</b><span>Otrzymałam międzynarodowe wyróżnienie, które przyznawane jest artystom z całego świata za estetykę i najwyższą jakość pracy.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head rv" style="--s:0"><div><span class="label">Jak pracuję</span><h2>Na czym <em>mi zależy</em></h2></div></div>
+      <div class="pillars">
+        <div class="pil rv" style="--s:1">
+          <div class="ph"><img src="img/p08.jpg" alt="Supernaturalnie wygojone brwi" loading="lazy"></div>
+          <h3>Lekkość</h3>
+          <p>Makijaż ma podkreślać urodę, a nie dominować nad twarzą. Mniej znaczy więcej, zwłaszcza po wygojeniu.</p>
+        </div>
+        <div class="pil rv" style="--s:2">
+          <div class="ph"><img src="img/p14.jpg" alt="Brwi permanentne z bliska, równa linia i miękkie przejścia" loading="lazy"></div>
+          <h3>Precyzja i sterylność</h3>
+          <p>Kilka minut przygotowań decyduje o jakości całego zabiegu. Sterylność, precyzja i dbałość o każdy detal.</p>
+        </div>
+        <div class="pil rv" style="--s:3">
+          <div class="ph"><img src="img/p11.jpg" alt="Nowy gabinet w Zamościu" loading="lazy" style="object-position:50% 60%"></div>
+          <h3>Własne miejsce</h3>
+          <p>Nowy gabinet w Zamościu stworzyłam z pasji, estetyki i miłości do piękna. Spokojnie, jasno i bez pośpiechu.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== KONTAKT =============== -->
+<section class="panel" data-panel="kontakt" aria-label="Kontakt" hidden>
+  <div class="wrap">
+    <div class="sec">
+      <div class="sec-head rv" style="--s:0"><div><span class="label">Kontakt</span><h2>Umów <em>wizytę</em></h2></div></div>
+      <div class="ct">
+        <div class="callcard rv" style="--s:1">
+          <span class="label">Zapisy telefonicznie</span>
+          <span class="num">574 082 772</span>
+          <p>Zadzwoń albo napisz na Facebooku. Nie przyjmuję zapisów przez SMS. Jeśli nie odbieram, oddzwonię najszybciej, jak to możliwe.</p>
+          <div class="row">
+            <a class="btn btn-dark" href="tel:+48574082772">Zadzwoń</a>
+            <button class="copy" data-copy="574 082 772">Kopiuj numer</button>
+          </div>
+          <div class="socials">
+            <a href="https://www.instagram.com/martynakot.pmu/" target="_blank" rel="noopener"><b>Instagram</b><span>@martynakot.pmu</span></a>
+            <a href="https://www.facebook.com/PMUMartynaKot/" target="_blank" rel="noopener"><b>Facebook</b><span>Makijaż Permanentny Martyna Kot</span></a>
+          </div>
+        </div>
+        <div class="locs">
+          <div class="locc rv" style="--s:2">
+            <span class="label">Gabinet · śląskie</span>
+            <h3>Będzin</h3>
+            <p>Aleja H. Kołłątaja 46, 42-500 Będzin</p>
+            <dl class="hours" id="hours">
+              <dt data-d="1">Poniedziałek</dt><dd data-d="1">9:00–20:00</dd>
+              <dt data-d="2">Wtorek</dt><dd data-d="2">9:00–20:00</dd>
+              <dt data-d="3">Środa</dt><dd data-d="3">9:00–20:00</dd>
+              <dt data-d="4">Czwartek</dt><dd data-d="4">9:00–20:00</dd>
+              <dt data-d="5">Piątek</dt><dd data-d="5">9:00–18:00</dd>
+              <dt data-d="6">Sobota</dt><dd data-d="6">9:00–15:00</dd>
+              <dt data-d="0">Niedziela</dt><dd data-d="0">nieczynne</dd>
+            </dl>
+            <div><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=MK%20Martyna%20Kot%20B%C4%99dzin&amp;query_place_id=ChIJnWm0AzTRFkcRlTsXfeN3uIM" target="_blank" rel="noopener">Wyznacz trasę <svg class="arrow"><use href="#arr"/></svg></a></div>
+          </div>
+          <div class="locc rv" style="--s:3">
+            <span class="label">Nowy gabinet · lubelskie</span>
+            <h3>Zamość</h3>
+            <p>Dokładny adres i godziny przyjęć podam przy rezerwacji terminu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="#start" data-go="start"><svg class="mark" aria-hidden="true" style="width:30px;height:30px"><use href="#mk"/></svg><span class="wm"><b style="font-size:1.05rem">MARTYNA KOT</b><small>PERMANENT MAKEUP</small></span></a>
+    <span>Makijaż permanentny brwi, ust i powiek · Będzin | Zamość</span>
+    <span>© 2026 MK Martyna Kot</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+  const star = i => '<svg style="--i:'+i+'"><use href="#star"/></svg>';
+  function fillStars(root){ $$('[data-stars]',root).forEach(el=>{ if(!el.dataset.done){ el.innerHTML=Array.from({length:+el.dataset.stars},(_,i)=>star(i)).join(''); el.setAttribute('aria-label',el.dataset.stars+' na 5 gwiazdek'); el.setAttribute('role','img'); el.dataset.done=1; } }); }
+
+  /* ---------- reviews ---------- */
+  const R=[
+    ["Monika Cz","Brwi","Jestem absolutnie zachwycona efektem makijażu permanentnego brwi! Zabieg przebiegł w przemiłej atmosferze, pełen profesjonalizm od początku do końca. Brwi wyglądają bardzo naturalnie, są idealnie dopasowane do mojej twarzy. Higiena i podejście do klienta na najwyższym poziomie. Z całego serca polecam i na pewno wrócę na kolejne zabiegi!"],
+    ["Katarzyna Jamruszkiewicz","","Profesjonalne podejście do wykonywanego zabiegu. Super atmosfera i ciepło bijące od Martyny, która wszystko tłumaczy swoim ciepłym głosem. Polecam wszystkim Martynę! Ma dziewczyna talent i jest w pełni zaangażowana w to, co robi i oferuje."],
+    ["Magdalena Warchoł","Korekta brwi","Martyna to prawdziwa profesjonalistka! Zdecydowałam się na poprawkę makijażu permanentnego brwi i nie mogłam trafić lepiej. Brwi są teraz perfekcyjne, mają piękny kształt, wyglądają naturalnie i świetnie podkreślają rysy twarzy. Martyna ma ogromne wyczucie estetyki, wszystko tłumaczy spokojnie i dokładnie."],
+    ["Elżbieta Żak","","Najlepsza w swojej profesji. Profesjonalna, z wyczuciem smaku. Z pewnością każda z Pań wyjdzie od Martyny z przepięknym, naturalnym i idealnie dobranym makijażem permanentnym."],
+    ["Aleksandra Potoczny","Kreska","Odpowiednia osoba na odpowiednim miejscu. Pełna pasji i profesjonalizmu. Makijaż wykonany perfekcyjnie, a atmosfera podczas zabiegu relaksująca. Jak permanentny, to tylko u Martyny! Ktokolwiek nie zapyta o kreskę, odsyłam."],
+    ["Joanna Pawluk","Odświeżenie","Pełen profesjonalizm, jestem zadowolona z efektu i od kilku lat wracam do pani Martyny na zabieg odświeżania. Miła atmosfera i super podejście do klienta. Polecam."],
+    ["Urszula Lewicka","Brwi","Świetne podejście, fajna atmosfera podczas wykonywania makijażu permanentnego. Brwi piękne! Serdecznie polecam Panią Martynę."],
+    ["Grażyna Szweda","","Bardzo profesjonalne podejście do klienta, usługa wykonana na 200 procent. Jestem bardzo zadowolona. Pani Martyna ma fach w ręku, z całego serca polecam."],
+    ["Justyna Stępniowska","Brwi","Dziękuję za perfekcyjne brwi! Bardzo profesjonalna obsługa! Polecam z całego serca. Jak permanentny, to tylko u Pani Martyny."],
+    ["Wioletta Czernicka","","Wizyta u Pani Martyny to czysta przyjemność. Zajęła się mną bardzo profesjonalnie i będę polecać panią z pełnym przekonaniem."],
+    ["Małgibałgi YT","Brwi","Pełen profesjonalizm, a do tego miło i sympatycznie. Polecam, jestem bardzo zadowolona z brwi, na pewno wrócę."],
+    ["Klaudia Kokoszka","Brwi","Bardzo profesjonalne podejście, makijaż permanentny brwi wykonany idealnie. Bardzo polecam wszystkim!"],
+    ["Agnieszka Wałach","","Najlepsza makijażystka, jaką znam. Perfekcyjna. Polecam, tylko Martyna."],
+    ["Ola G","Brwi","Najlepiej wykonane brwi, polecam z całego serca Panią Martynę."],
+    ["Barbara Seroka","","Profesjonalnie, fachowo i estetycznie wykonany zabieg."]
+  ];
+  const ini = n => n.split(/\s+/).map(w=>w[0]).join('').slice(0,2).toUpperCase();
+  const card = (r,i) => '<article class="rc"><div class="top-row"><span class="stars" data-stars="5" style="--d:'+(i*60+300)+'ms"></span>'+(r[1]?'<span class="chip">'+r[1]+'</span>':'')+'</div><q>'+r[2]+'</q><footer><span class="av" aria-hidden="true">'+ini(r[0])+'</span><span class="who"><b>'+r[0]+'</b><span>Opinia z Google</span></span></footer></article>';
+  $('#revs').innerHTML = R.slice(1).map(card).join('');
+  const extra=$$('#revs .rc').slice(6); extra.forEach(c=>c.hidden=true);
+  if(extra.length){ const mb=document.createElement('button'); mb.className='btn btn-line more-revs'; mb.type='button'; mb.textContent='Pokaż wszystkie opinie ('+(R.length-1)+')';
+    $('#revs').after(mb); mb.addEventListener('click',()=>{ extra.forEach((c,i)=>{ c.hidden=false; if(!reduce){ c.style.animation='rise .6s var(--ease) backwards '+(i*60)+'ms'; } }); fillStars($('#revs')); mb.remove(); }); }
+  $('#tease').insertAdjacentHTML('beforeend', [R[2],R[4]].map((r,i)=>card(r,i).replace('class="rc"','class="rc rv" style="--s:'+(i+2)+';margin:0"')).join(''));
+  fillStars(document);
+
+  /* ---------- gallery ---------- */
+  const G=[
+    ["img/p19.jpg","brwi","Ombre brows z bliska"],["img/p06.jpg","brwi","Wygojone brwi po jednym zabiegu"],["img/p04.jpg","usta","Usta permanentne, efekt naturalny"],["img/p08.jpg","brwi","Supernaturalne wygojenie po dopigmentowaniu"],
+    ["img/p17.jpg","kreska brwi","Kreska cieniowana górna i dolna, brwi po lekkiej korekcie"],["img/p10.jpg","brwi","Subtelne, wygojone brwi"],["img/p16.jpg","brwi usta","Brwi i usta w efekcie make-up no make-up"],["img/p14.jpg","brwi","Precyzja widoczna z bliska"],
+    ["img/p05.jpg","brwi","Wygojone brwi przy gęstej, ciemnej oprawie"],["img/p20.jpg","usta","Naturalne usta permanentne"],["img/p12.jpg","brwi","Wyrównana asymetria brwi"],["img/p07.jpg","brwi usta","Odświeżenie brwi i ust"],
+    ["img/p15.jpg","brwi","Wygojone brwi po jednym zabiegu"],["img/p23.jpg","brwi usta","Brwi zaraz po zabiegu, usta po wygojeniu"],["img/p21.jpg","brwi","Wygojone po pierwszym zabiegu, wrażliwa skóra"],["img/p13.jpg","brwi","Odświeżone brwi"],
+    ["img/p03.jpg","brwi","Lekkie podkreślenie naturalnych brwi"],["img/p22.jpg","brwi","Wygojone brwi po jednym zabiegu"]
+  ];
+  const gal=$('#gal');
+  gal.innerHTML=G.map((g,i)=>'<button class="gi" data-c="'+g[1]+'" data-i="'+i+'"><img src="'+g[0]+'" alt="'+g[2]+'" loading="lazy" width="720" height="960"><figcaption>'+g[2]+'</figcaption></button>').join('');
+  ['all','brwi','usta','kreska'].forEach(c=>{ $('#c-'+c).textContent = c==='all'?G.length:G.filter(g=>g[1].split(' ').includes(c)).length; });
+  let cur='all';
+  $('#filters').addEventListener('click',e=>{
+    const b=e.target.closest('button'); if(!b) return; cur=b.dataset.f;
+    $$('#filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+    let k=0;
+    $$('.gi',gal).forEach(el=>{ const on = cur==='all' || el.dataset.c.split(' ').includes(cur); el.classList.toggle('hide',!on); el.classList.remove('pop'); if(on && !reduce){ void el.offsetWidth; el.style.animationDelay=(k++*45)+'ms'; el.classList.add('pop'); } });
+  });
+  // lightbox
+  let lb=null, li=0;
+  function vis(){ return $$('.gi',gal).filter(el=>!el.classList.contains('hide')).map(el=>+el.dataset.i); }
+  function showLb(i){
+    li=i; const g=G[i];
+    if(!lb){
+      lb=document.createElement('div'); lb.className='lb'; lb.setAttribute('role','dialog'); lb.setAttribute('aria-modal','true'); lb.setAttribute('aria-label','Podgląd zdjęcia');
+      lb.innerHTML='<button class="x" aria-label="Zamknij">×</button><button class="pv" aria-label="Poprzednie">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="nx" aria-label="Następne">›</button>';
+      document.body.appendChild(lb);
+      lb.addEventListener('click',e=>{ if(e.target===lb||e.target.classList.contains('x')) closeLb(); else if(e.target.classList.contains('pv')) step(-1); else if(e.target.classList.contains('nx')) step(1); });
+    }
+    const im=$('img',lb); im.src=g[0]; im.alt=g[2]; $('figcaption',lb).textContent=g[2];
+    lb.hidden=false; requestAnimationFrame(()=>lb.classList.add('on')); $('.x',lb).focus();
+  }
+  function step(d){ const v=vis(); const p=v.indexOf(li); showLb(v[(p+d+v.length)%v.length]); }
+  function closeLb(){ if(!lb) return; lb.classList.remove('on'); setTimeout(()=>{lb.hidden=true},reduce?0:300); }
+  gal.addEventListener('click',e=>{ const b=e.target.closest('.gi'); if(b) showLb(+b.dataset.i); });
+  document.addEventListener('keydown',e=>{ if(!lb||lb.hidden) return; if(e.key==='Escape') closeLb(); if(e.key==='ArrowRight') step(1); if(e.key==='ArrowLeft') step(-1); });
+
+  /* ---------- healing toggle ---------- */
+  const caps={a:"Soft ombre bezpośrednio po pigmentacji. Kolor jest intensywniejszy i tak właśnie ma być.",b:"Brwi po wygojeniu, po jednym zabiegu. Kolor złagodniał, przejścia są miękkie, a efekt wygląda naturalnie."};
+  $('#seg').addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; const h=b.dataset.h;
+    $$('#seg button').forEach(x=>x.setAttribute('aria-pressed',x===b)); $('#seg').classList.toggle('r',h==='b');
+    $('#healA').classList.toggle('off',h==='b'); $('#healB').classList.toggle('off',h==='a'); $('#healCap').textContent=caps[h]; });
+
+  /* ---------- hours: highlight today ---------- */
+  const d=new Date().getDay(); $$('#hours [data-d="'+d+'"]').forEach(el=>el.classList.add('today'));
+
+  /* ---------- copy ---------- */
+  const toast=$('#toast'); let tt;
+  function say(t){ toast.textContent=t; toast.classList.add('on'); clearTimeout(tt); tt=setTimeout(()=>toast.classList.remove('on'),2200); }
+  document.addEventListener('click',e=>{ const b=e.target.closest('[data-copy]'); if(!b) return;
+    const v=b.dataset.copy;
+    const fallback=()=>{ const r=document.createRange(); const n=b.previousElementSibling||b; r.selectNodeContents(n); const s=getSelection(); s.removeAllRanges(); s.addRange(r); say('Numer zaznaczony, skopiuj go ręcznie'); };
+    try{ navigator.clipboard.writeText(v).then(()=>say('Skopiowano: '+v),fallback); }catch(_){ fallback(); } });
+
+  /* ---------- tabs ---------- */
+  const panels=Object.fromEntries($$('.panel').map(p=>[p.dataset.panel,p]));
+  const navBtns=$$('#nav button'), ind=$('#ind'), stroke=$('#stroke'), nav=$('#nav');
+  let active='start', busy=false, pending=null;
+  function placeInd(){ const b=navBtns.find(x=>x.dataset.go===active); if(!b) return; const pad=12; ind.style.width=(b.offsetWidth-pad*2)+'px'; ind.style.transform='translateX('+(b.offsetLeft+pad)+'px)'; }
+  function centerTab(){ const b=navBtns.find(x=>x.dataset.go===active); if(!b||nav.scrollWidth<=nav.clientWidth) return; nav.scrollTo({left:b.offsetLeft-(nav.clientWidth-b.offsetWidth)/2,behavior:reduce?'auto':'smooth'}); }
+  function go(id,target,instant){
+    if(!panels[id]) id='start';
+    const scrollTo=()=>{ if(target){ const t=document.getElementById(target); if(t){ const y=t.getBoundingClientRect().top+scrollY-(document.querySelector('.top').offsetHeight+16); window.scrollTo({top:y,behavior:'auto'}); return;} } window.scrollTo({top:0,behavior:'auto'}); };
+    if(id===active){ scrollTo(); return; }
+    if(busy){ pending=[id,target]; return; } busy=true;
+    const from=panels[active], to=panels[id]; active=id;
+    navBtns.forEach(b=>b.toggleAttribute('aria-current',b.dataset.go===id)); navBtns.forEach(b=>{ if(b.dataset.go===id) b.setAttribute('aria-current','page'); });
+    placeInd(); centerTab();
+    try{ history.replaceState(null,'','#'+id); }catch(_){}
+    const swap=()=>{
+      from.hidden=true; from.classList.remove('leaving','entering','play');
+      to.hidden=false; scrollTo();
+      if(!reduce && !instant){ to.classList.remove('entering'); void to.offsetWidth; to.classList.add('entering','play'); setTimeout(()=>to.classList.remove('entering'),1400); }
+      else to.classList.add('play');
+      busy=false;
+      if(pending){ const q=pending; pending=null; go(q[0],q[1]); }
+    };
+    if(reduce||instant){ swap(); return; }
+    stroke.classList.remove('run'); void stroke.offsetWidth; stroke.classList.add('run');
+    from.classList.add('leaving'); setTimeout(swap,220);
+  }
+  document.addEventListener('click',e=>{ const t=e.target.closest('[data-go]'); if(!t) return; e.preventDefault(); go(t.dataset.go,t.dataset.target); });
+  addEventListener('resize',placeInd);
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(placeInd);
+  placeInd();
+  const h=(location.hash||'').slice(1); if(h && panels[h] && h!=='start') go(h,null,true);
+  panels.start.classList.add('entering'); setTimeout(()=>panels.start.classList.remove('entering'),1400);
+})();
+</script>
+
+</body>
+</html>
